@@ -1,5 +1,7 @@
 ﻿using ProjectCSharp22CN2.Dao;
-using ProjectCSharp22CN2.UsersControl;
+using ProjectCSharp22CN2.Forms;
+using ProjectCSharp22CN2.Model;
+
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ProjectCSharp22CN2
@@ -19,7 +21,31 @@ namespace ProjectCSharp22CN2
         // ===========================Form Login ===========================
         private void login_Click(object sender, EventArgs e)
         {
+            string username = txtUserName.Text.Trim();
+            string password = txtPassword.Text.Trim();
 
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            UserDao userDAO = new UserDao();
+            User? user = userDAO.CheckLogin(username, password);
+
+            if (user != null)
+            {
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Hide(); 
+                // điều hướng
+                UserForm userForm = new UserForm(user); 
+                userForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ClearForm_Click(object sender, EventArgs e)
@@ -111,29 +137,41 @@ namespace ProjectCSharp22CN2
             if (txtPasswordRegister.Text == txtConfirmPasswordRegister.Text)
             {
                 errorProvider1.SetError(txtConfirmPasswordRegister, "");
+                btnRegister.Enabled = true;
             }
             else
             {
                 errorProvider1.SetError(txtConfirmPasswordRegister, "❌ Mật khẩu không khớp!");
+                btnRegister.Enabled = false;
             }
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            UserDao userDao = new UserDao();
-            bool isRegistered = userDao.Register(txtUserNameRegister.Text, txtPasswordRegister.Text);
+            string userName = txtUserNameRegister.Text.Trim();
+            string password = txtPasswordRegister.Text.Trim();
 
-            if (isRegistered)
+            if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            UserDao userDao = new UserDao();
+            string result = userDao.Register(userName, password);
+
+            if (result == "Đăng ký thành công")
             {
                 MessageBox.Show("Đăng ký thành công! 🎉", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // Reset các ô nhập
-                txtUserNameRegister.Text = "";
-                txtPasswordRegister.Text = "";
-                txtConfirmPasswordRegister.Text = "";
+                txtUserNameRegister.Clear();
+                txtPasswordRegister.Clear();
+                txtConfirmPasswordRegister.Clear();
+                panelRegister.Visible = false;
+                panelLogin.Visible = true;
             }
             else
             {
-                MessageBox.Show("Tên đăng nhập đã tồn tại hoặc có lỗi xảy ra!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(result, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

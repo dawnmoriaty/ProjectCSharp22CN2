@@ -10,7 +10,7 @@ namespace ProjectCSharp22CN2.utils
 {
     class ConnectDB
     {
-        private static readonly string connectionString = "Data Source=DESKTOP-P2D30BR\\SQLEXPRESS;Initial Catalog=ProjectCSharp22CN2;Integrated Security=True;TrustServerCertificate=True";
+        private static readonly string connectionString = "Data Source=DESKTOP-P2D30BR\\SQLEXPRESS;Initial Catalog=PersonalFinanceApp;Integrated Security=True;TrustServerCertificate=True";
         // Mở kết nối
         public static SqlConnection GetConnection()
         {

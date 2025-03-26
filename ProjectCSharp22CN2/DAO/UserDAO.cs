@@ -60,7 +60,7 @@ namespace ProjectCSharp22CN2.Dao
                 ConnectDB.CloseConnection(conn);
             }
         }
-        public bool Register(string username, string password, string userRole="USER")
+        public string Register(string username, string password, string userRole = "USER")
         {
             SqlConnection conn = ConnectDB.GetConnection();
             try
@@ -72,9 +72,9 @@ namespace ProjectCSharp22CN2.Dao
 
                 if (userExists > 0)
                 {
-                    Console.WriteLine("Tên đăng nhập đã tồn tại!");
-                    return false; 
+                    return "Tên đăng nhập đã tồn tại";
                 }
+
                 string hashedPassword = HashPassword(password);
                 string insertQuery = "INSERT INTO Users (UserName, PasswordHash, UserRole) VALUES (@userName, @password, @userRole)";
                 SqlCommand cmd = new SqlCommand(insertQuery, conn);
@@ -83,12 +83,18 @@ namespace ProjectCSharp22CN2.Dao
                 cmd.Parameters.AddWithValue("@userRole", userRole);
 
                 int rowsAffected = cmd.ExecuteNonQuery();
-                return rowsAffected > 0; 
+                if (rowsAffected > 0)
+                {
+                    return "Đăng ký thành công";
+                }
+                else
+                {
+                    return "Không thể chèn dữ liệu vào cơ sở dữ liệu";
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Lỗi đăng ký: " + ex.Message);
-                return false;
+                return "Lỗi: " + ex.Message;
             }
             finally
             {

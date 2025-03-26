@@ -1,4 +1,6 @@
-﻿namespace ProjectCSharp22CN2.Forms
+﻿using ProjectCSharp22CN2.Model;
+
+namespace ProjectCSharp22CN2.Forms
 {
     partial class UserForm
     {
@@ -18,6 +20,14 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+        }
+        public UserForm()
+        {
+            InitializeComponent();
+        }
+        public UserForm(User user)
+        {
+            InitializeComponent();
         }
 
         #region Windows Form Designer generated code

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectCSharp22CN2.Model
 {
-    class User
+    public class User
     {
         public int Id { get; set; }
         public string UserName { get; set; }
