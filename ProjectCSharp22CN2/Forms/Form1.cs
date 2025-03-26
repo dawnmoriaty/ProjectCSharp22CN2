@@ -1,4 +1,6 @@
-﻿using ProjectCSharp22CN2.UsersControl;
+﻿using ProjectCSharp22CN2.Dao;
+using ProjectCSharp22CN2.UsersControl;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ProjectCSharp22CN2
 {
@@ -39,7 +41,7 @@ namespace ProjectCSharp22CN2
             }
         }
 
-        
+
         public void ShowLoginPanel()
         {
             panelRegister.Visible = false;
@@ -116,6 +118,23 @@ namespace ProjectCSharp22CN2
             }
         }
 
-        
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            UserDao userDao = new UserDao();
+            bool isRegistered = userDao.Register(txtUserNameRegister.Text, txtPasswordRegister.Text);
+
+            if (isRegistered)
+            {
+                MessageBox.Show("Đăng ký thành công! 🎉", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Reset các ô nhập
+                txtUserNameRegister.Text = "";
+                txtPasswordRegister.Text = "";
+                txtConfirmPasswordRegister.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Tên đăng nhập đã tồn tại hoặc có lỗi xảy ra!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

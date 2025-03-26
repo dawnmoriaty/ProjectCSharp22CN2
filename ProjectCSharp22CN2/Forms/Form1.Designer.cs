@@ -42,7 +42,6 @@
             panelRegister = new Panel();
             txtConfirmPasswordRegister = new TextBox();
             btnExitRegister = new Button();
-            SelectRoleRegister = new ComboBox();
             btnClearFormRegister = new Button();
             btnRegister = new Button();
             ShowPasswordRegister = new CheckBox();
@@ -71,7 +70,7 @@
             panelLogin.Controls.Add(txtPassword);
             panelLogin.Controls.Add(txtUserName);
             panelLogin.Controls.Add(label1);
-            panelLogin.Location = new Point(52, 114);
+            panelLogin.Location = new Point(70, 118);
             panelLogin.Name = "panelLogin";
             panelLogin.Size = new Size(309, 382);
             panelLogin.TabIndex = 0;
@@ -172,21 +171,20 @@
             panelRegister.BorderStyle = BorderStyle.Fixed3D;
             panelRegister.Controls.Add(txtConfirmPasswordRegister);
             panelRegister.Controls.Add(btnExitRegister);
-            panelRegister.Controls.Add(SelectRoleRegister);
             panelRegister.Controls.Add(btnClearFormRegister);
             panelRegister.Controls.Add(btnRegister);
             panelRegister.Controls.Add(ShowPasswordRegister);
             panelRegister.Controls.Add(txtPasswordRegister);
             panelRegister.Controls.Add(txtUserNameRegister);
             panelRegister.Controls.Add(RegisterLabel);
-            panelRegister.Location = new Point(585, 112);
+            panelRegister.Location = new Point(514, 120);
             panelRegister.Name = "panelRegister";
             panelRegister.Size = new Size(309, 382);
             panelRegister.TabIndex = 10;
             // 
             // txtConfirmPasswordRegister
             // 
-            txtConfirmPasswordRegister.Location = new Point(52, 147);
+            txtConfirmPasswordRegister.Location = new Point(52, 181);
             txtConfirmPasswordRegister.MaxLength = 20;
             txtConfirmPasswordRegister.Name = "txtConfirmPasswordRegister";
             txtConfirmPasswordRegister.PlaceholderText = "Confirm Password";
@@ -207,15 +205,6 @@
             btnExitRegister.Text = "Exit";
             btnExitRegister.UseVisualStyleBackColor = false;
             btnExitRegister.Click += btnExitRegister_Click;
-            // 
-            // SelectRoleRegister
-            // 
-            SelectRoleRegister.FormattingEnabled = true;
-            SelectRoleRegister.Items.AddRange(new object[] { "ADMIN", "USER" });
-            SelectRoleRegister.Location = new Point(52, 191);
-            SelectRoleRegister.Name = "SelectRoleRegister";
-            SelectRoleRegister.Size = new Size(209, 28);
-            SelectRoleRegister.TabIndex = 8;
             // 
             // btnClearFormRegister
             // 
@@ -241,6 +230,7 @@
             btnRegister.TabIndex = 6;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
             // 
             // ShowPasswordRegister
             // 
@@ -256,7 +246,7 @@
             // 
             // txtPasswordRegister
             // 
-            txtPasswordRegister.Location = new Point(52, 104);
+            txtPasswordRegister.Location = new Point(52, 136);
             txtPasswordRegister.MaxLength = 20;
             txtPasswordRegister.Name = "txtPasswordRegister";
             txtPasswordRegister.PlaceholderText = "Password";
@@ -266,7 +256,7 @@
             // 
             // txtUserNameRegister
             // 
-            txtUserNameRegister.Location = new Point(52, 61);
+            txtUserNameRegister.Location = new Point(52, 78);
             txtUserNameRegister.Name = "txtUserNameRegister";
             txtUserNameRegister.PlaceholderText = "UserName";
             txtUserNameRegister.Size = new Size(209, 27);
@@ -346,7 +336,6 @@
         private Button btnCloseLoginModal;
         private Panel panelRegister;
         private Button btnExitRegister;
-        private ComboBox SelectRoleRegister;
         private Button btnClearFormRegister;
         private Button btnRegister;
         private CheckBox ShowPasswordRegister;
