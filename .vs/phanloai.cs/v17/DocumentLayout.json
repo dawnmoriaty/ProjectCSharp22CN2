@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|solutionrelative:baocaochitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|c:\\users\\admin\\onedrive\\documents\\c# vs .net\\phanloai.cs\\baocaochitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|solutionrelative:baocaochitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|c:\\users\\admin\\onedrive\\documents\\c# vs .net\\phanloai.cs\\themgiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|solutionrelative:themgiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\sogiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|solutionrelative:sogiaodich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\baocaochitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|solutionrelative:baocaochitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|c:\\users\\admin\\onedrive\\documents\\c# vs .net\\phanloai.cs\\themgiaodich.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|solutionrelative:themgiaodich.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|c:\\users\\admin\\onedrive\\documents\\c# vs .net\\phanloai.cs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83083F27-6262-4253-A2F2-E7E8E9FF48D1}|phanloai.cs.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "themgiaodich.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\themgiaodich.Designer.cs",
+              "RelativeDocumentMoniker": "themgiaodich.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\themgiaodich.Designer.cs",
+              "RelativeToolTip": "themgiaodich.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T16:48:29.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "baocaochitiet.cs",
               "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\baocaochitiet.cs",
               "RelativeDocumentMoniker": "baocaochitiet.cs",
@@ -67,12 +88,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "themgiaodich.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\themgiaodich.cs",
+              "RelativeDocumentMoniker": "themgiaodich.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\themgiaodich.cs [Design]",
+              "RelativeToolTip": "themgiaodich.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T15:07:00.345Z",
               "EditorCaption": " [Design]"
@@ -92,6 +113,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documents\\C# vs .NET\\phanloai.cs\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T16:48:21.339Z",
+              "EditorCaption": ""
             }
           ]
         }

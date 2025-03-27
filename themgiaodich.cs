@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace phanloai.cs
 {
-    public partial class Form1 : Form
+    public partial class themgiaodich : Form
     {
-        public Form1()
+        public themgiaodich()
         {
             InitializeComponent();
             comboBox1.SelectedIndexChanged += new EventHandler(comboBox1_SelectedIndexChanged);

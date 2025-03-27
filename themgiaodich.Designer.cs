@@ -1,6 +1,6 @@
 ﻿namespace phanloai.cs
 {
-    partial class Form1
+    partial class themgiaodich
     {
 
         private System.ComponentModel.IContainer components = null;
@@ -22,7 +22,7 @@
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(themgiaodich));
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();

@@ -2,7 +2,6 @@ C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\bin\Debug\phanloai.cs.e
 C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\bin\Debug\phanloai.cs.exe
 C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\bin\Debug\phanloai.cs.pdb
 C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\obj\Debug\phanloai.cs.csproj.AssemblyReference.cache
-C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\obj\Debug\phanloai.cs.Form1.resources
 C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\obj\Debug\phanloai.cs.Properties.Resources.resources
 C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\obj\Debug\phanloai.cs.csproj.GenerateResource.cache
 C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\obj\Debug\phanloai.cs.csproj.CoreCompileInputs.cache
@@ -10,3 +9,4 @@ C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\obj\Debug\phanloai.cs.e
 C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\obj\Debug\phanloai.cs.pdb
 C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\obj\Debug\phanloai.cs.sogiaodich.resources
 C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\obj\Debug\phanloai.cs.baocaochitiet.resources
+C:\Users\admin\OneDrive\Documents\C# vs .NET\phanloai.cs\obj\Debug\phanloai.cs.themgiaodich.resources
